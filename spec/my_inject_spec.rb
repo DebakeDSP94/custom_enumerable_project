@@ -13,7 +13,7 @@ RSpec.describe Enumerable do
     end
 
     it 'can be used to calculate the product' do
-      product = enumerable.my_inject(1) { |prod, value| prod * value }
+      product = enumerable.my_inject(0) { |prod, value| prod * value }
 
       expect(product).to eq 2_227_680
     end
